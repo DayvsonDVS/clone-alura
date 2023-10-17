@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     }
   },
   modules: ['nuxt-svgo'],
-  css: ['normalize.css', '@/assets/scss/main.scss'],
+  css: ['normalize.css', '@/assets/scss/main.scss', '@/assets/scss/vars.scss'],
   vite: {
     css: {
       preprocessorOptions: {

@@ -1,3 +1,3 @@
 <template>
-  <img class="logo" src="@/imgs/alura-logo.svg" />
+  <img class="logo" src="../../assets/imgs/alura-logo.svg" />
 </template>

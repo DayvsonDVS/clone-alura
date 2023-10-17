@@ -1,56 +1,52 @@
 <template>
-  <div class="index">
-    <!-- <NavigationMenu /> -->
+  <Container>
 
-    <Card
-      color="mobile"
-      title="Escola_"
-      subtitle="MOBILE"
-      :content="listContentMobile"
-    >
-      <SVGMobile />
-    </Card>
+    <NavigationMenu />
 
-    <Card
-      color="ux-design"
-      title="Escola_"
-      subtitle="UX & DESIGN"
-      :content="listContentUXDesign"
-    >
-      <SVGUXDesign />
-    </Card>
+    <ContainerCategories />
+
+    <ContainerTerminal />
+
+    <ContainerVideo />
+
+    <ContainerBenefits />
+
+    <ContentFormation />
+
+  </Container>
+
+  <div class="divider">
+    <img src="../../assets/imgs/formations-divider.svg">
   </div>
+
+  <Container>
+
+    <ContainerFormation />
+
+  </Container>
+
+  <ContainerSocialProof />
+
+  <Container>
+
+    <ContainerFiap />
+
+    <ContainerEvidence />
+
+  </Container>
 </template>
 
 <script setup lang="ts">
-import SVGMobile from 'assets/icons/phone.svg'
-import SVGUXDesign from 'assets/icons/eye-fill.svg'
 
-const listContentMobile = [
-  'React Native,',
-  'Flutter,',
-  'iOS e Swift,',
-  'Android,',
-  'Kotlin,',
-  'Jogos,',
-  'e mais...'
-]
-
-const listContentUXDesign = [
-  'Usabilidade e UX,',
-  'Vídeo e Motion,',
-  '3D e mais...,'
-]
 </script>
 
 <style scoped lang="scss">
-.index {
-  display: grid;
-  grid-auto-flow: column;
-  padding: 1rem;
-  justify-content: center;
-  gap: 0.5rem;
-  position: relative;
-  top: 100px;
+.divider {
+  width: 100%;
+  margin-top: 5rem;
+
+  img {
+    width: 100%;
+  }
 }
 </style>

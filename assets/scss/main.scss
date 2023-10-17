@@ -4,8 +4,11 @@
   box-sizing: inherit;
 }
 body {
-  background: #17191d;
+  background-color: #01080e !important;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
+}
+ul li {
+  list-style: none;
 }
